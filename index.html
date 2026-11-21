@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>盐田卤水与结晶过程仿真系统</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">⚑</span>
+        <div>
+          <h1>盐田卤水与结晶过程仿真系统</h1>
+          <p class="sub">WebGPU 计算着色器 · 230 格滩田 · 全季盐账守恒 ≤1‰</p>
+        </div>
+      </div>
+      <nav class="tabs" id="tabs">
+        <button data-page="field" class="active">滩田布局</button>
+        <button data-page="brine">纳潮制卤</button>
+        <button data-page="crystal">结晶池</button>
+        <button data-page="weather">天气推演</button>
+        <button data-page="harvest">收盐调度</button>
+      </nav>
+      <div class="backend" id="backendBadge">后端检测中…</div>
+    </header>
+    <main id="page" class="page"></main>
+    <footer class="statusbar" id="statusbar">就绪</footer>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
